@@ -4,7 +4,8 @@ This repository contains code for extracting text fragments, converting them int
 
 ## Repository Structure
 
-- `extract_text.py`: Script for extracting text fragments from various data sources.
+- `extract_text.py`: Script for extracting text from all HTML or PDF documents present in a given folder.
+- `preprocess_text.py`: Script to break up the data into chunks and clean it up.
 - `create_embeddings.py`: Script for converting the extracted text fragments into embeddings using pre-trained models.
 - `context_augmented_queries.py`: Script for performing context-augmented queries on the embeddings.
 
