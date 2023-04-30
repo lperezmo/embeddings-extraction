@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 #--------------------------------------------------------#
 # OpenAI API Key (optional: set as environment variable)
 #--------------------------------------------------------#
-openai.api_key(os.getenv('OPENAI_API_KEY'))
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 #--------------------------------------------------------#
 # Define function to get top-k results
