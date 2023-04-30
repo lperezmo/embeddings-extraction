@@ -11,7 +11,7 @@ from tqdm.auto import tqdm
 #--------------------------------------------------------#
 # OpenAI API Key (optional: set as environment variable)
 #--------------------------------------------------------#
-openai.api_key(os.getenv('OPENAI_API_KEY'))
+openai.api_key = os.getenv('OPENAI_API_KEY')
 
 #----------------------------------------------#
 # Create embeddings and append to DataFrame
