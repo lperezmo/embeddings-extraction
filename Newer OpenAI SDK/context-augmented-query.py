@@ -28,7 +28,7 @@ def get_top_k_results_text(df, query_text, embed_model='text-embedding-3-small',
 
     while not done and retry_count < max_retries:
         try:
-            res = openai.embeddings.create(input=query_text, model=embed_model)
+            res = client.embeddings.create(input=query_text, model=embed_model)
             done = True
         except Exception as e:
             # print(f"Error creating embeddings for batch {i}: {e}")

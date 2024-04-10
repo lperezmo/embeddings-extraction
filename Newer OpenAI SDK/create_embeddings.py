@@ -44,7 +44,7 @@ def create_and_append_embeddings(new_data, embed_model = 'text-embedding-3-small
 
         while not done and retry_count < max_retries:
             try:
-                res = openai.embeddings.create(input=texts, model=embed_model)
+                res = client.embeddings.create(input=texts, model=embed_model)
                 done = True
             except Exception as e:
                 print(f"Error creating embeddings for batch {i}: {e}")
