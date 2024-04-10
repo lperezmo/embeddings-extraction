@@ -4,6 +4,8 @@ This repository contains code for extracting text fragments, converting them int
 
 ## Repository Structure
 
+> For the version that works best with OpenAI's newer SDK (version > 1.0.0), see scripts in folder `Newer OpenAI SDK`. For legacy versions see `Older OpenAI SDK`.
+
 - `extract_text.py`: Script for extracting text from all HTML or PDF documents present in a given folder.
 - `preprocess_text.py`: Script to break up the data into chunks and clean it up.
 - `create_embeddings.py`: Script for converting the extracted text fragments into embeddings using pre-trained models.
